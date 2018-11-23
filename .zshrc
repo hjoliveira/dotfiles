@@ -83,3 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias brexit='rm -rf ./node_modules && npm i'
+
+export PATH="~/bin:~/Documents/Training/ml-coursera/anaconda/bin:$PATH"
