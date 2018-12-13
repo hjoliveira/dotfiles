@@ -86,4 +86,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias brexit='rm -rf ./node_modules && npm i'
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 export PATH="~/bin:~/Documents/Training/ml-coursera/anaconda/bin:$PATH"
+
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
