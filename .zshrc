@@ -88,11 +88,12 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.profile
 
+export N_PREFIX=$HOME/.n
 alias brexit='rm -rf ./node_modules && npm i'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export PATH="~/bin:~/Documents/Training/ml-coursera/anaconda/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.n/bin:$PATH"
 
 bindkey "^[^[[D" backward-word
 bindkey "^[^[[C" forward-word
