@@ -84,6 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source ~/.profile
+
 alias brexit='rm -rf ./node_modules && npm i'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -92,3 +94,17 @@ export PATH="~/bin:~/Documents/Training/ml-coursera/anaconda/bin:$PATH"
 
 bindkey "^[^[[D" backward-word
 bindkey "^[^[[C" forward-word
+
+bindkey "\e\eOD" backward-word
+bindkey "\e\eOC" forward-word
+
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11.0.2)
+export CORRETTO_11_HOME=$(/usr/libexec/java_home -v11.0.4)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias corretto11='export JAVA_HOME=$CORRETTO_11_HOME'
+
+# default to Java 11
+java11
