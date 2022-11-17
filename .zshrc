@@ -113,3 +113,7 @@ alias corretto11='export JAVA_HOME=$CORRETTO_11_HOME'
 
 # default to Corretto 11
 corretto11
+
+# uncomment to use awscli@1
+#export PATH="/usr/local/opt/awscli@1/bin:$PATH"
+
