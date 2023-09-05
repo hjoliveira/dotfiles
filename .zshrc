@@ -117,15 +117,11 @@ bindkey "^[^[[C" forward-word
 bindkey "\e\eOD" backward-word
 bindkey "\e\eOC" forward-word
 
-#export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-#export JAVA_11_HOME=$(/usr/libexec/java_home -v11.0.2)
-# export CORRETTO_8_HOME=$(/usr/libexec/java_home -v1.8)
 export CORRETTO_11_HOME=$(/usr/libexec/java_home -v11)
+export CORRETTO_17_HOME=$(/usr/libexec/java_home -v17)
 
-#alias java8='export JAVA_HOME=$JAVA_8_HOME'
-#alias java11='export JAVA_HOME=$JAVA_11_HOME'
-# alias corretto8='export JAVA_HOME=$CORRETTO_8_HOME'
 alias corretto11='export JAVA_HOME=$CORRETTO_11_HOME'
+alias corretto17='export JAVA_HOME=$CORRETTO_17_HOME'
 
 # default to Corretto 11
 corretto11
