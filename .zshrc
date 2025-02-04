@@ -111,23 +111,23 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH="$HOME/bin:$HOME/.n/bin:$PATH"
 
-bindkey "^[^[[D" backward-word
-bindkey "^[^[[C" forward-word
-
-bindkey "\e\eOD" backward-word
-bindkey "\e\eOC" forward-word
-
 export CORRETTO_11_HOME=$(/usr/libexec/java_home -v11)
 export CORRETTO_17_HOME=$(/usr/libexec/java_home -v17)
+export CORRETTO_21_HOME=$(/usr/libexec/java_home -v21)
 
 alias corretto11='export JAVA_HOME=$CORRETTO_11_HOME'
 alias corretto17='export JAVA_HOME=$CORRETTO_17_HOME'
+alias corretto21='export JAVA_HOME=$CORRETTO_21_HOME'
 
-# default to Corretto 11
-corretto11
+# default to Corretto 17
+corretto17
 
 # uncomment to use awscli@1
 #export PATH="/usr/local/opt/awscli@1/bin:$PATH"
 
 export N_PREFIX=$HOME/.n
 export PATH=$PATH:$N_PREFIX/bin
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
