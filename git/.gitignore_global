@@ -1,2 +1,28 @@
+# OS artifacts
 *~
 .DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Logs & runtime
+*.log
+*.swp
+*.swo
