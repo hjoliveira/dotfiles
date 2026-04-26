@@ -1,5 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
 	name = hjoliveira
+	email = 7120571+hjoliveira@users.noreply.github.com
 [push]
 	autoSetupRemote = true
